@@ -11,7 +11,7 @@ const App = () => {
   const router = createBrowserRouter(
     createRoutesFromElements(
       <Route path="/" element={<Root />}>
-        <Route index element={<Home />} loader={async () => fetch('public/data.json')} />
+        <Route index element={<Home />} loader={async () => fetch('data.json')} />
       </Route>
     )
   );
