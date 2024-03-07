@@ -51,7 +51,7 @@ const About = () => {
         GO TO SOURCE
       </a>
 
-      <div className="flex items-center justify-between w-full h-20 absolute bottom-0 border-t-[1px] border-[#E5E5E5] md:bottom-[-380px] xl:bottom-[-22 0px]">
+      <div className="flex items-center justify-between w-full h-20 absolute bottom-0 border-t-[1px] border-[#E5E5E5] md:bottom-[-380px] xl:bottom-[-220px]">
         <div className="flex flex-col">
           <p className="text-sm font-bold md:text-xl">{state.name}</p>
           <p className="text-[10px] opacity-75 md:text-sm">{state.artist.name}</p>
