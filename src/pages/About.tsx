@@ -1,8 +1,13 @@
+import { useState } from 'react';
 import { useLocation } from 'react-router-dom';
 
 const About = () => {
   const { state } = useLocation();
+  const [display, setDisplay] = useState(false);
 
+  const change = () => {
+    setDisplay(!display);
+  };
   return (
     <div className="mt-24 flex items-center md:items-start justify-center flex-col gap-28 md:gap-16 xl:flex-row relative w-[90%]">
       <div className="relative ">
@@ -15,6 +20,7 @@ const About = () => {
           src={`${state.images.hero.large}`}
           alt=""
           className="w-[575px] h-auto hidden md:block"
+          onClick={() => change()}
         />
         <div className="absolute bottom-[-120px] md:top-0 md:right-[-130px] xl:right-[-180px]">
           <div className="w-[280px] h-26 bg-white p-4 md:p-4 flex flex-col md:gap-4">
