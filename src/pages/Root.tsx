@@ -3,7 +3,7 @@ import Header from '../components/Header';
 
 const Root = () => {
   return (
-    <div className="relative flex items-center justify-center flex-col">
+    <div className="relative flex justify-center">
       <Header />
       <Outlet />
     </div>
